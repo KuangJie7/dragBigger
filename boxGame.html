@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    #box{
+        width:100px;
+        height:100px;
+        background-color:#66cccc;
+        color:white;
+        font:30px "Arial";
+        font-weight:bold;
+        position: absolute ;
+        margin:0;
+        padding:0;
+        left:300px;
+        top:300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s;
+        z-index: 1;
+    }
+    #whole{
+        width: 140px;
+        height: 135px;
+        position: absolute;
+        left:280px;
+        top:284px;
+        z-index: 1;
+        background-color:#a5ca00;
+        opacity: 0;
+    }
+.squares{
+    width:7px;
+    height:7px;
+    position: absolute;
+    background-color:black;
+    z-index: 10;
+    /*display:none;*/
+    opacity:0;
+}
+.left{
+    left:283px;
+}
+.top{
+    top:287px;
+}
+.right {
+    left: 409px;
+}
+.middle_hori{
+    top:350px;
+}
+.middle_vertival{
+    left: 347px;
+}
+.bottom {
+    top: 407px;
+}
+
+    </style>
+    <script src="boxGame.js"></script>
+</head>
+<body>
+<div id="whole">
+</div>
+<div class = "squares left top" id = "left_top"></div>
+<div class = "squares middle_vertival top" id = "top"></div>
+<div class = "squares right top"  id = "right_top"></div>
+<div class = "squares left middle_hori" id = "left_middle"></div>
+<div class = "squares right middle_hori" id = "right_middle"></div>
+<div class = "squares left bottom" id = "left_bottom"></div>
+<div class = "squares middle_vertival bottom" id = "bottom"></div>
+<div class = "squares right bottom" id = "right_bottom"></div>
+
+<div id="box">
+    <p> o o!</p>
+</div>
+</body>
+</html>
